@@ -7,6 +7,9 @@ import restaurantsRouter from "./routes/restaurant.js";
 import citiesRouter from "./routes/city.js";
 import tagsRouter from "./routes/tag.js";
 
+
+
+console.log("AAAAAAAAAAAAA")
 import connectToDatabase from "./models/index.js";
 
 
@@ -23,6 +26,7 @@ import connectToDatabase from "./models/index.js";
   
   connectToDatabase().then((err, res) => {
     app.listen(PORT, function () {
+      console.log("bbbbbbbbbbbbb")
       console.log("server is running on" + " " + `http://localhost:${PORT}`);
     });
   });
